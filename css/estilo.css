@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.header{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    
+}
+.header-text{
+    color: white;
+    padding-left: 50px;
+    height: inherit;
+    padding-top: 30px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    height: inherit;
+    padding-right: 50px;
+}
+.menu ul li{
+    height: inherit;
+}
+.menu ul li a{
+    text-decoration-line: none;
+    color: white;
+    padding: 0px 30px 0px 0px;
+
+}
+.checkbtn{
+    font-size: 38px;
+    color: #fff;
+    float: right;
+    margin: 25px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+.checkbtn img{
+    color: #fff;
+}
+#check{
+    display: none;
+}
+.content{
+    background-image: url(../img/fondonegro.png);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+ }
+ .content-text{
+     height: 500px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     padding-left: 50px;
+ }
+ .content-text h1{
+     font-size: 60px;
+ }
+ .content-text p{
+     font-size: 25px;
+     margin-bottom: 20px;
+ }
+ .content-text a{
+     display: inline-block;
+     text-decoration: none;
+     color: white;
+     padding: 12px 15px;
+     background: #c1c1c1;
+     border-radius: 10px;
+  
+ }
+ .svg-header{
+     position: absolute;
+     bottom: 0;
+     left:0;
+     width: 100%;
+}
+.contenedor-website{
+    margin: 0 auto;
+    padding: 0 0 80px 0;
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-website img{
+    width: 48%;
+
+}
+.text-main{
+    width: 40%;
+
+}.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.cta{
+    display:inline-block;
+    text-decoration: none;
+    background-image: url(../img/gradiente.png);
+    padding: 12px 25px;
+    border-radius: 10px;
+    color:white;
+
+}
+.info{
+    background: #eae3c8;
+    color:white;
+}
+.contenedor-info h2{
+    text-align: center;
+}
+.services{
+    margin: 0 auto;
+    padding: 0 0 80px 0;
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.tarjeta{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgb(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+.tarjeta:hover{
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.tarjeta img{
+    margin: 30px 0 20px 0;
+}
+.tarjeta p{
+    font-weight: 300px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.galeria{
+    background: #eae3c8;
+    margin-bottom: 20px;
+    
+}
+.contenedor-galeria{
+    /*width: 100px;*/
+    margin: 0 auto;
+    padding: 0 0 80px 0;
+    padding-left: 30px;
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+.imagenes>img{
+    width: 30%;
+    padding: 0 10px 10px 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+}
+.contenedor-info{
+    padding: 50px 200px;
+   
+}
+.titulo{
+    font-weight: 300px;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.title-left{
+    text-align: left;
+    color: black;
+    font-size: 35px;
+    padding-left: 125px;
+}
+.title-ilust{
+    text-align: left;
+}
+footer{
+    background-image: url(../img/fondonegro.png);
+    color:white;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input{
+    background: transparent;
+    border:0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+}
+.input::placeholder{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+input[type="text"], input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+.input[type="submit"]:hover{
+    cursor: pointer;
+    color: #000;
+    background:  #eae3c8;;
+}
+@media screen and (max-width:800px) {
+    .header-text{
+        text-align: center;
+    }
+    .menu{
+        text-align: center;
+    }
+    .title-left{
+        text-align: left;
+        display: inline;
+        padding-left:0px;
+        width: 0px;
+    }
+    .parrafo{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:540px){
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background:#fff;
+        top: 80%;
+        left: -100%;
+        text-align: center;
+        transition: all.5s;
+    }
+    .menu ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .menu ul li a{
+        font-size: 20px;
+    }
+    a:hover, :active{
+        background: none;
+        color: #c1c1c1;
+    }
+    #check:checked -ul{
+        left: 0;
+    }
+
+    
+}
+
+
+
+    
+
+
+
+
+ 
